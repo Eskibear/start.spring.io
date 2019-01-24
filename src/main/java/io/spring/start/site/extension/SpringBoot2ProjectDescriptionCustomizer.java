@@ -19,8 +19,8 @@ package io.spring.start.site.extension;
 import java.util.Arrays;
 import java.util.List;
 
-import io.spring.initializr.generator.ProjectDescription;
-import io.spring.initializr.generator.ProjectDescriptionCustomizer;
+import io.spring.initializr.generator.project.ProjectDescription;
+import io.spring.initializr.generator.project.ProjectDescriptionCustomizer;
 import io.spring.initializr.generator.util.Version;
 
 /**
