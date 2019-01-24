@@ -20,7 +20,7 @@ import io.spring.initializr.generator.buildsystem.Build;
 import io.spring.initializr.generator.buildsystem.DependencyContainer;
 import io.spring.initializr.generator.buildsystem.DependencyScope;
 import io.spring.initializr.generator.project.ResolvedProjectDescription;
-import io.spring.initializr.generator.project.build.BuildCustomizer;
+import io.spring.initializr.generator.spring.build.BuildCustomizer;
 import io.spring.initializr.generator.util.Version;
 
 /**

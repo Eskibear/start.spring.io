@@ -18,7 +18,7 @@ package io.spring.start.site.extension;
 
 import io.spring.initializr.generator.buildsystem.Build;
 import io.spring.initializr.generator.buildsystem.DependencyScope;
-import io.spring.initializr.generator.project.build.BuildCustomizer;
+import io.spring.initializr.generator.spring.build.BuildCustomizer;
 
 /**
  * Determine the appropriate Spring Cloud stream dependency to use based on the selected

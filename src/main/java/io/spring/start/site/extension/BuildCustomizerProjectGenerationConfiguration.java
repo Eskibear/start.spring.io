@@ -19,7 +19,7 @@ package io.spring.start.site.extension;
 import io.spring.initializr.generator.condition.ConditionalOnRequestedDependency;
 import io.spring.initializr.generator.project.ProjectGenerationConfiguration;
 import io.spring.initializr.generator.project.ResolvedProjectDescription;
-import io.spring.initializr.generator.project.build.BuildCustomizer;
+import io.spring.initializr.generator.spring.build.BuildCustomizer;
 import io.spring.initializr.metadata.InitializrMetadata;
 
 import org.springframework.context.annotation.Bean;
@@ -33,20 +33,20 @@ import org.springframework.context.annotation.Bean;
 public class BuildCustomizerProjectGenerationConfiguration {
 
 	@Bean
-	@ConditionalOnRequestedDependency(id = "webflux")
+	@ConditionalOnRequestedDependency("webflux")
 	public ReactorTestBuildCustomizer reactorTestBuildCustomizer(
 			ResolvedProjectDescription description) {
 		return new ReactorTestBuildCustomizer(description);
 	}
 
 	@Bean
-	@ConditionalOnRequestedDependency(id = "security")
+	@ConditionalOnRequestedDependency("security")
 	public SpringSecurityTestBuildCustomizer securityTestBuildCustomizer() {
 		return new SpringSecurityTestBuildCustomizer();
 	}
 
 	@Bean
-	@ConditionalOnRequestedDependency(id = "batch")
+	@ConditionalOnRequestedDependency("batch")
 	public SpringBatchTestBuildCustomizer batchTestBuildCustomizer() {
 		return new SpringBatchTestBuildCustomizer();
 	}
@@ -81,7 +81,7 @@ public class BuildCustomizerProjectGenerationConfiguration {
 	}
 
 	@Bean
-	@ConditionalOnRequestedDependency(id = "session")
+	@ConditionalOnRequestedDependency("session")
 	public SpringSessionBuildCustomizer springSessionBuildCustomizer(
 			ResolvedProjectDescription description) {
 		return new SpringSessionBuildCustomizer(description);

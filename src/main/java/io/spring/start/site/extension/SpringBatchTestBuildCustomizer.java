@@ -18,7 +18,7 @@ package io.spring.start.site.extension;
 
 import io.spring.initializr.generator.buildsystem.Build;
 import io.spring.initializr.generator.buildsystem.DependencyScope;
-import io.spring.initializr.generator.project.build.BuildCustomizer;
+import io.spring.initializr.generator.spring.build.BuildCustomizer;
 
 /**
  * A {@link BuildCustomizer} that automatically adds {@code spring-batch-test} when Spring
