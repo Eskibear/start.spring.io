@@ -155,10 +155,6 @@ initializr:
         - versionRange: "[1.5.0.RELEASE,2.0.0.M1)"
           version: 1.2.51
     repositories:
-      vschinaoss-visualstudio-com-vschinaoss-azure-spring-cloud-snapshot:
-        name: Azure Snapshots
-        url: https://vschinaoss.pkgs.visualstudio.com/_packaging/azure-spring-cloud-snapshot/maven/v1
-        snapshotsEnabled: true
       sonatype-snapshots:
         name: Sonatype Snapshots
         url: https://oss.sonatype.org/content/repositories/snapshots/
@@ -1046,7 +1042,7 @@ initializr:
           groupId: com.microsoft.azure
           artifactId: spring-cloud-starter-azure-config
           version: 1.0.0.BUILD-SNAPSHOT
-          repository: vschinaoss-visualstudio-com-vschinaoss-azure-spring-cloud-snapshot
+          repository: sonatype-snapshots
           description: Providing Spring Property Source via Azure Configuration backend
           links:
             - rel: guide
