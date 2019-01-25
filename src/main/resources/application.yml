@@ -155,6 +155,10 @@ initializr:
         - versionRange: "[1.5.0.RELEASE,2.0.0.M1)"
           version: 1.2.51
     repositories:
+      vschinaoss-visualstudio-com-vschinaoss-azure-spring-cloud-snapshot:
+        name: Azure Snapshots
+        url: https://vschinaoss.pkgs.visualstudio.com/_packaging/azure-spring-cloud-snapshot/maven/v1
+        snapshotsEnabled: true
       sonatype-snapshots:
         name: Sonatype Snapshots
         url: https://oss.sonatype.org/content/repositories/snapshots/
@@ -1036,6 +1040,20 @@ initializr:
               description: Using Azure Storage
             - rel: reference
               href: https://github.com/Microsoft/azure-spring-boot/tree/master/azure-spring-boot-starters/azure-storage-spring-boot-starter
+              description: Reference doc
+        - name: Spring Cloud Azure Config
+          id: spring-cloud-azure-config
+          groupId: com.microsoft.azure
+          artifactId: spring-cloud-starter-azure-config
+          version: 1.0.0.BUILD-SNAPSHOT
+          repository: vschinaoss-visualstudio-com-vschinaoss-azure-spring-cloud-snapshot
+          description: Providing Spring Property Source via Azure Configuration backend
+          links:
+            - rel: guide
+              href: https://github.com/Microsoft/spring-cloud-azure/tree/azure-config/spring-cloud-azure-samples/azure-config-sample
+              description: Sample code to demostrate loading properties from  Azure Configuration Store to Spring Boot application.
+            - rel: reference
+              href: https://github.com/Microsoft/spring-cloud-azure/tree/azure-config/spring-cloud-azure-starters/spring-cloud-starter-azure-config
               description: Reference doc
     - name: Spring Cloud GCP
       bom: spring-cloud
